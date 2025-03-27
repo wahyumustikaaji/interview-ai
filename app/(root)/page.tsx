@@ -4,7 +4,8 @@ import Image from 'next/image'
 import React from 'react'
 import { dummyInterviews } from '@/constants'
 import InterviewCard from '@/components/InterviewCard'
-import { getCurrentuser, getInterviewByUserId, getLatestInterview } from '@/lib/actions/auth.action'
+import { getCurrentuser } from '@/lib/actions/auth.action'
+import { getInterviewByUserId, getLatestInterview } from '@/lib/actions/general.action'
 
 const HomePage = async () => {
   const user = await getCurrentuser();
