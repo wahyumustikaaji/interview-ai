@@ -8,9 +8,9 @@ import { getFirestore } from "firebase/firestore";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyD8FfLSB85GG0jRRuPmg6eCQ802VP9sSq4",
-  authDomain: "prepwise-f6a6b.firebaseapp.com",
-  projectId: "prepwise-f6a6b",
-  storageBucket: "prepwise-f6a6b.firebasestorage.app",
+  authDomain: "PrepAI-f6a6b.firebaseapp.com",
+  projectId: "PrepAI-f6a6b",
+  storageBucket: "PrepAI-f6a6b.firebasestorage.app",
   messagingSenderId: "757726515758",
   appId: "1:757726515758:web:ffd4b2d777f3c7b49045bf",
   measurementId: "G-6B3E5SVL6G"
