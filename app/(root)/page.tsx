@@ -4,11 +4,11 @@ import Image from 'next/image'
 import React from 'react'
 import { dummyInterviews } from '@/constants'
 import InterviewCard from '@/components/InterviewCard'
-import { getCurrentuser } from '@/lib/actions/auth.action'
+import { getCurrentUser } from '@/lib/actions/auth.action'
 import { getInterviewByUserId, getLatestInterview } from '@/lib/actions/general.action'
 
 const HomePage = async () => {
-  const user = await getCurrentuser();
+  const user = await getCurrentUser();
 
   const [userInterviews, latesInterviews] = await Promise.all([
     await getInterviewByUserId(user?.id!),
@@ -56,7 +56,7 @@ const HomePage = async () => {
           latesInterviews?.map((interview) => (
             <InterviewCard {...interview} key={interview.id} />
           ))) : (
-          <p>There are no new interviews avalilabe</p>
+          <p>There are no new interviews availabe</p>
         )}
       </div>
     </section>

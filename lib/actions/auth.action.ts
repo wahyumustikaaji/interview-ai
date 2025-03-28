@@ -83,7 +83,7 @@ export async function setSessionCookie(idToken: string) {
     })
 }
 
-export async function getCurrentuser(): Promise<User | null> {
+export async function getCurrentUser(): Promise<User | null> {
     const cookieStore = await cookies();
 
     const sessionCookie = cookieStore.get('session')?.value;
@@ -109,7 +109,7 @@ export async function getCurrentuser(): Promise<User | null> {
 }
 
 export async function isAuthenticated() {
-    const user = await getCurrentuser();
+    const user = await getCurrentUser();
 
     return !!user;
 }
